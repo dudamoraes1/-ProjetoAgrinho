@@ -3,46 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festejando a Conexão Campo Cidade</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Festejando a Conexão Campo-Cidade</title>
+    <style>
+        /* Reset básico para margens e preenchimentos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilização do corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Cabeçalho com menu fixo */
+        header {
+            background-color: #2e7d32; /* Verde campo */
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Seção principal com imagemros imagem de fundo */
+        #hero {
+            background-image: url('https://via.placeholder.com/1200x400?text=Campo+e+Cidade');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        #hero h2 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Estilização das seções de conteúdo */
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        section h3 {
+            color: #0288d1; /* Azul cidade */
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            margin-bottom: 1rem;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #424242; /* Cinza cidade */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            #hero h2 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 0.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Festejando a Conexão Campo Cidade</h1>
+        <h1>Festejando a Conexão Campo-Cidade</h1>
         <nav>
             <ul>
+                <li><a href="#home">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#atividades">Atividades</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#conexoes">Conexões</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="sobre">
-            <h2>Sobre o Projeto</h2>
-            <p>Este projeto celebra a união entre o campo e a cidade através de festivais e eventos.</p>
-        </section>
-        <section id="atividades">
-            <h2>Atividades</h2>
-            <ul>
-                <li>Feiras de produtos locais</li>
-                <li>Workshops de culinária</li>
-                <li>Apresentações culturais</li>
-            </ul>
-        </section>
-        <section id="contato">
-            <h2>Contato</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+
+    <section id="hero">
+        <h2>Conectando o Campo e a Cidade</h2>
+        <p>Explorando a harmonia entre a vida rural e urbana.</p>
+    </section>
+
+    <section id="sobre">
+        <h3>Sobre o Projeto</h3>
+        <p>Este site celebra a conexão essencial entre o campo e a cidade, mostrando como esses dois mundos se complementam. O campo fornece alimentos e recursos, enquanto a cidade oferece inovação e mercados.</p>
+    </section>
+
+    <section id="conexoes">
+        <h3>Conexões Campo-Cidade</h3>
+        <p><strong>Alimentos:</strong> Frutas, vegetais e grãos do campo chegam às mesas urbanas, sustentando a vida na cidade.</p>
+        <p><strong>Cultura:</strong> Festivais rurais trazem tradições para as cidades, enquanto a cultura urbana inspira modernizações no campo.</p>
+        <p><strong>Economia:</strong> A cidade oferece tecnologia e infraestrutura, enquanto o campo fornece matéria-prima essencial.</p>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Festejando a Conexão Campo Cidade. Todos os direitos reservados.</p>
+        <p>Projeto desenvolvido para o Itinerário Formativo de Matemática e Ciências da Natureza, 2025.</p>
     </footer>
 </body>
 </html>
